@@ -1,4 +1,4 @@
-function convert() {
+export function convert() {
     console.log("Page loaded and script initialized.");
 
 	const pountInput = document.getElementById("pount-input");
@@ -15,5 +15,3 @@ export function convertKg(kg) {
     let pounds = kg * 2.20462262;
     console.log(kg + " Kg motsvarar " + pounds.toFixed(2) + " Pounds.");
 }
-
-initialize();
