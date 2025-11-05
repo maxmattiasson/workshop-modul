@@ -18,7 +18,18 @@
     <div class="card">
       <div class="temp-cont">
         <h2>Celcius till fahrenheit</h2>
-        <input id="input-celsius" type="number" placeholder="Celcius" />
+        <form id="unit-form">
+          <label>
+            <input id="cels" type="radio" name="unit" value="C" checked />
+            °C → °F
+          </label>
+          <label>
+            <input id="fahr" type="radio" name="unit" value="F" />
+            °F → °C
+          </label>
+        </form>
+
+        <input id="input-celsius" type="number" placeholder="Ange grader" />
         <p id="temp-svar"></p>
         <button id="celcius-btn">Kör!</button>
       </div>
