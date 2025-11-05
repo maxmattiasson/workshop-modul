@@ -13,3 +13,12 @@ document.querySelector("#celcius-btn").addEventListener("click", () => {
 
 console.log(convertTemp(20));
 convertWeight(150);
+convertPounds(150);
+
+const input = document.getElementById("cmInput");
+const result = document.getElementById("resultM");
+
+input.addEventListener("input", () => {
+    const cm = (input.value);
+        result.innerText = `${convertCm(cm)} m`;
+});
