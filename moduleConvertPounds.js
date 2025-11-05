@@ -3,5 +3,3 @@ export function convert(pnd) {
     let kg = pnd * 0.45359237;   
     console.log(pnd + " Pounds motsvarar " + kg + " Kg.");
 }
-
-convert(150);
