@@ -15,9 +15,11 @@ console.log(convertTemp(20));
 convertWeight(150);
 
 const input = document.getElementById("cmInput");
+const button = document.getElementById("measure-btn");
 const result = document.getElementById("resultM");
 
-input.addEventListener("input", () => {
-  const cm = input.value;
+
+button.addEventListener("click", () => {
+  const cm = (input.value);
   result.innerText = `${convertCm(cm)} m`;
 });
