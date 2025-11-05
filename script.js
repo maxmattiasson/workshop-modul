@@ -11,9 +11,6 @@ document.querySelector("#celcius-btn").addEventListener("click", () => {
   )} grader fahrenheit`;
 });
 
-console.log(convertTemp(20));
-convertWeight(150);
-
 const input = document.getElementById("cmInput");
 const button = document.getElementById("measure-btn");
 const result = document.getElementById("resultM");
@@ -22,4 +19,11 @@ const result = document.getElementById("resultM");
 button.addEventListener("click", () => {
   const cm = (input.value);
   result.innerText = `${convertCm(cm)} m`;
+});
+
+document.querySelector("#pound-input").addEventListener("input", () => {
+  const Kg = document.querySelector("#pound-input").value;
+  document.querySelector(
+    "#weight-kg"
+  ).innerText = `Vikt i pounds: ${convertWeight(Kg)}`;
 });
