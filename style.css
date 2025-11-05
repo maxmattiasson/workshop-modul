@@ -3,3 +3,39 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background: linear-gradient(to right, lightblue, pink);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  font-family: "Titan One", sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+}
+
+.card {
+  border: 2px black solid;
+  width: 40vw;
+  padding: 20px;
+  border-radius: 10px;
+}
+.temp-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.temp-cont p {
+  min-height: 20px;
+}
+.temp-cont button {
+  width: 100px;
+}
+#input-celsius {
+  padding: 5px;
+}
