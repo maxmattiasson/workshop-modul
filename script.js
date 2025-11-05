@@ -7,9 +7,7 @@ document.querySelector("#celcius-btn").addEventListener("click", () => {
 
   const unit = document.querySelector("#cels").checked ? "C" : "F";
   let toUnit = "C";
-  if (unit === "C") {
-    toUnit = "F";
-  }
+  unit === "C" ? (toUnit = "F") : (toUnit = "C");
 
   document.querySelector(
     "#temp-svar"
