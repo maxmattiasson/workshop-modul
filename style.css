@@ -23,6 +23,7 @@ h1 {
   border: 2px black solid;
   width: 40vw;
   padding: 20px;
+  margin-bottom: 50px;
   border-radius: 10px;
 }
 .temp-cont {
