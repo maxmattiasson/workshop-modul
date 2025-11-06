@@ -17,9 +17,10 @@ document.querySelector("#celcius-btn").addEventListener("click", () => {
   )} grader av ${toUnit} `;
 });
 
-const input = document.getElementById("cmInput");
-const button = document.getElementById("measure-btn");
-const result = document.getElementById("resultM");
+document.querySelector("#measure-btn").addEventListener("click", () => {
+  const cm = document.querySelector("#cmInput").value;
+  document.querySelector("#resultM").textContent = `${convertCm(cm)} m`;
+});
 
 button.addEventListener("click", () => {
   const cm = input.value;
