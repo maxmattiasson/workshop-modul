@@ -22,11 +22,6 @@ document.querySelector("#measure-btn").addEventListener("click", () => {
   document.querySelector("#resultM").textContent = `${convertCm(cm)} m`;
 });
 
-button.addEventListener("click", () => {
-  const cm = input.value;
-  result.innerText = `${convertCm(cm)} m`;
-});
-
 document.querySelector("#pound-input").addEventListener("input", () => {
   const Kg = document.querySelector("#pound-input").value;
   document.querySelector(
